@@ -35,30 +35,22 @@
             </div>
     <div class="inputName">
         <div style="margin-bottom: 40px">Username:gmcbrand1</div>
-        <form action="bvoinfo.do" method="post">
-            <div><label class="green">Name:</label><input type="text" value="Lucy"></div>
-            <div><label class="green">Email:</label><input type="text" value="97656444@123.com"></div>
-            <div><label class="green">Phone:</label><input type="text" value="1376533621"></div>
+        <form action="bvoInfo.do" method="post">
+            <div><label class="green">Name:</label><input type="text" name="name"></div>
+            <div><label class="green">Email:</label><input type="text" name="email"></div>
+            <div><label class="green">Phone:</label><input type="text" name="phone"></div>
             <button class="btn  btn-success save">save</button>
+            <input type="button" class="btn  btn-pink" onclick="myshop()" value="My Stores">
         </form>
-        <button class="btn  btn-pink" onclick="myshop()">My Stores</button>
     </div>
 
-
-
     </div></div>
-
-
 
     </body>
     <script src="js/jquery-1.9.1.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootbox.min.js"></script>
     <script type="text/javascript">
-    $(function(){
-
-
-    })
        function myshop(){
             window.location.href = "bvo-goodsstoreAdd.html"
         }
